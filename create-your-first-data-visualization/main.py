@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 snack_scores = [85, 40, 90]
 slice_labels = ["chips", "nuts", "cheese puffs"]
 
-
 # Let's make a pie chart!
 plt.pie(snack_scores, labels=slice_labels)
 
