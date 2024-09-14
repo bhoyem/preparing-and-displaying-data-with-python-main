@@ -8,3 +8,4 @@ plt.xlabel("Month, fontsize=16")
 plt.ylabel("Temp in Fahrenheit",fontsize=16)
 plt.title("Avg Temperatures for 2018 in North Pole, Alaska")
 plt.savefig("north_pole_temps.png")          
+
