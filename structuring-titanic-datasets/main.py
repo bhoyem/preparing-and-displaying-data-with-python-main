@@ -17,3 +17,14 @@ combined_data = np.concatenate((titanic_data1, titanic_data2), axis=0)
 
 print(combined_data.shape)
 print(combined_data.ndim)
+
+listify = combined_data.tolist()
+titanic_lists_to_string = []
+for titanic_lists in listify:
+  titanic_string=(",").join(titanic_lists)
+  titanic_lists_to_string.append(titanic_string)
+complete_titanic=("\n").join(titanic_lists_to_string)
+
+with open("titanic.csv", "w") as file:
+  ('Survived,Pclass,Name,Sex,Age,Siblings/Spouses Aboard,ParentsChildren Aboard, Fare\n')
+  file.write(complete_titanic)
