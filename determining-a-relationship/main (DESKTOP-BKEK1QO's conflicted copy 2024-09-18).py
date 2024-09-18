@@ -40,6 +40,6 @@ happiness_average_per_country = wage_and_happiness_by_country["Happiness score"]
 print(f"Happiness average per Country \n{happiness_average_per_country}")
 
 print(f"Countries with the largest average wages: \n{wage_average_per_country.nlargest(10)}")
-print(f"Countries with the lowest average waages: \n{wage_average_per_country.nsmallest(10)}")
-print(f"Countries with the largest average wages: \n{wage_average_per_country.nlargest(10)}")
-print(f"Countries with the lowest average waages: \n{wage_average_per_country.nsmallest(10)}")
+print(f"Countries with the lowest average wages: \n{wage_average_per_country.nsmallest(10)}")
+print(f"Countries with the highest average happiness: \n{happiness_average_per_country.nlargest(10)}")
+print(f"Countries with the lowest average happiness: \n{happiness_average_per_country.nsmallest(10)}")
