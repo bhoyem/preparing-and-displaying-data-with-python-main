@@ -34,18 +34,11 @@ def get_animal(url):
 
 category_data = get_categories("https://skillcrush.github.io/web-scraping-endangered-species/")
 
-# print(category_data)
-
-# animal_class = get_animal("https://en.wikipedia.org/wiki/Honey_badger")
-
-# print(animal_class)
-
 collected_data = []
 
 for category in category_data:
   for animal in category_data[category]:
     animal_href = animal["href"]
-    # print(animal_href)
     animal_class = get_animal(animal_href)
     animal_name = animal.contents[0]
     if len(animal_name) > 3:
@@ -54,8 +47,5 @@ for category in category_data:
         "Animal Name":animal_name,
         "Animal Class":animal_class
         })
-# print(collected_data)
 with open("data.json", "w") as jsonfile:
   json.dump(collected_data, jsonfile)
-    # print(animal_name)
-    # print()
